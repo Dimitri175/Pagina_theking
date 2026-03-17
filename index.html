@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The King Travels | Premium Tourism — Pacaya Samiria</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="The King Travels: Vive experiencias únicas en la Reserva Nacional Pacaya Samiria. Ceremonias de Ayahuasca, pesca deportiva, caminatas en la selva amazónica y más. Guías certificados y tours premium." />
+  <meta name="keywords"
+    content="Pacaya Samiria, turismo, selva amazónica, ayahuasca, pesca deportiva, tours Perú, aventura, amazon jungle tours" />
+  <meta name="author" content="The King Travels" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The King Travels | Premium Tourism" />
+  <meta property="og:description"
+    content="Aventura y misticismo en el corazón de la selva amazónica. Reserva tu expedición ahora." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="/images/Landescape/dji_fly_20230307_083412_593_1678196401112_photo_optimized.JPG" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-leaf">🌿</div>
+      <span class="preloader-text">The King Travels</span>
+    </div>
+  </div>
+
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="glass-nav">
+      <div class="logo">The King Travels</div>
+      <ul class="nav-links">
+        <li><a href="#hero" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="#experiences" data-i18n="nav.experiences">Experiencias</a></li>
+        <li><a href="#destinations" data-i18n="nav.destinations">Destinos</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Paquetes</a></li>
+        <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#contact" class="btn-primary" data-i18n="nav.book">Reservar</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle" title="Switch language">
+          <span class="lang-flag">🇬🇧</span>
+          <span class="lang-label">EN</span>
+        </button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1 class="fade-in-up" data-i18n="hero.title">Amazonía Majestuosa</h1>
+        <p class="fade-in-up delay-1" data-i18n="hero.subtitle">Descubra el alma de la selva virgen a través de una
+          experiencia exclusiva y legendaria.</p>
+        <a href="#experiences" class="btn-hero fade-in-up delay-2" data-i18n="hero.cta">Vivir la Experiencia</a>
+      </div>
+      <div class="hero-overlay"></div>
+    </header>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="section-padding">
+      <h2 class="section-title reveal" data-i18n="experiences.title">Experiencias Únicas</h2>
+      <div class="destinations-grid">
+
+        <!-- Ayahuasca -->
+        <div class="card premium-card reveal">
+          <div class="card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1614092523277-2e557297e289?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+          </div>
+          <div class="card-content">
+            <h3 data-i18n="exp.ayahuasca.title">Ceremonia de Ayahuasca</h3>
+            <p data-i18n="exp.ayahuasca.desc">Conexión espiritual y sanación ancestral con chamanes locales.</p>
+            <button class="btn-text" data-i18n="exp.ayahuasca.btn">Descubrir Más &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Jungle Trekking -->
+        <div class="card premium-card reveal">
+          <div class="card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1350&q=80')">
+          </div>
+          <div class="card-content">
+            <h3 data-i18n="exp.trekking.title">Caminata en la Selva</h3>
+            <p data-i18n="exp.trekking.desc">Explora la flora y fauna exótica en rutas inexploradas.</p>
+            <button class="btn-text" data-i18n="exp.trekking.btn">Ver Rutas &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Camping -->
+        <div class="card premium-card reveal">
+          <div class="card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1350&q=80')">
+          </div>
+          <div class="card-content">
+            <h3 data-i18n="exp.camping.title">Camping Nocturno</h3>
+            <p data-i18n="exp.camping.desc">Duerme bajo las estrellas rodeado de los sonidos de la naturaleza.</p>
+            <button class="btn-text" data-i18n="exp.camping.btn">Reservar Espacio &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Sport Fishing -->
+        <div class="card premium-card reveal" id="fishing-card">
+          <div class="card-image" style="background-image: url('/images/pesca-deportiva-artesanal/IMG_0869.JPG')">
+          </div>
+          <div class="card-content">
+            <h3 data-i18n="exp.fishing.title">Pesca Deportiva</h3>
+            <p data-i18n="exp.fishing.desc">14 Fotos Exclusivas</p>
+            <button class="btn-text" data-i18n="exp.fishing.btn">Ver Galería Completa &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Jungle Adventure -->
+        <div class="card premium-card reveal">
+          <div class="card-image"
+            style="background-image: url('https://images.unsplash.com/photo-1562818290-e675db33449e?auto=format&fit=crop&w=1350&q=80')">
+          </div>
+          <div class="card-content">
+            <h3 data-i18n="exp.adventure.title">Aventura Extrema</h3>
+            <p data-i18n="exp.adventure.desc">Rutas desafiantes para los verdaderos amantes de la adrenalina.</p>
+            <button class="btn-text" data-i18n="exp.adventure.btn">Atreverse &rarr;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== PHOTO GALLERY ===================== -->
+    <section id="gallery" class="section-dark gallery-section">
+      <h2 class="section-title text-light reveal" data-i18n="gallery.title">Galería Fotográfica</h2>
+      <p class="gallery-subtitle text-light reveal" data-i18n="gallery.subtitle">Imágenes reales de nuestras
+        expediciones en Pacaya Samiria</p>
+
+      <!-- Filter tabs -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="gallery.all">Todas</button>
+        <button class="filter-btn" data-filter="landscape" data-i18n="gallery.landscape">Paisajes</button>
+        <button class="filter-btn" data-filter="fishing" data-i18n="gallery.fishing">Pesca</button>
+        <button class="filter-btn" data-filter="adventure" data-i18n="gallery.adventure">Aventura</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Landscape / Drone -->
+        <div class="gallery-item reveal" data-category="landscape">
+          <img src="/images/Landescape/dji_fly_20230307_083412_593_1678196401112_photo_optimized.JPG"
+            alt="Vista aérea Pacaya Samiria" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.aerial1">Vista Aérea del Río</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="landscape">
+          <img src="/images/Landescape/dji_fly_20230307_083652_598_1678196357981_photo_optimized.JPG"
+            alt="Selva amazónica desde drone" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.aerial2">Selva desde el Cielo</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="landscape">
+          <img src="/images/Landescape/dji_fly_20230307_084156_604_1678196695299_photo_optimized.JPG"
+            alt="Río Pacaya desde arriba" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.aerial3">Río Pacaya</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="landscape">
+          <img src="/images/Landescape/dji_fly_20230307_084200_605_1678196658660_photo_optimized.JPG"
+            alt="Paisaje amazónico" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.aerial4">Paisaje Amazónico</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="landscape">
+          <img src="/images/Landescape/dji_fly_20230308_165728_633_1678312668269_photo_optimized.JPG"
+            alt="Atardecer en la selva" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.aerial5">Atardecer en la Selva</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="landscape">
+          <img src="/images/Landescape/dji_fly_20230308_165730_634_1678312742529_photo_optimized.JPG"
+            alt="Vista panorámica" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.aerial6">Vista Panorámica</span>
+          </div>
+        </div>
+
+        <!-- Fishing -->
+        <div class="gallery-item reveal" data-category="fishing">
+          <img src="/images/pesca-deportiva-artesanal/IMG_0869.JPG" alt="Pesca deportiva" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.fish1">Pesca en el Río</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="fishing">
+          <img src="/images/pesca-deportiva-artesanal/IMG_0874.JPG" alt="Pesca artesanal" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.fish2">Pesca Artesanal</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="fishing">
+          <img src="/images/pesca-deportiva-artesanal/IMG_8182.JPG" alt="Gran captura" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.fish3">Gran Captura</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="fishing">
+          <img src="/images/pesca-deportiva-artesanal/k.jpeg" alt="Pesca deportiva" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.fish4">Expedición de Pesca</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="fishing">
+          <img src="/images/pesca-deportiva-artesanal/o.jpeg" alt="Pesca en la selva" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.fish5">Pesca en la Selva</span>
+          </div>
+        </div>
+
+        <!-- Adventure -->
+        <div class="gallery-item reveal" data-category="adventure">
+          <img src="/images/aventura-selva/PHOTO-2023-12-26-21-17-43.jpg" alt="Aventura en la selva" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.adv1">Aventura en la Selva</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-category="adventure">
+          <img src="/images/aventura-selva/PHOTO-2023-12-26-21-17-47.jpg" alt="Expedición nocturna" loading="lazy">
+          <div class="gallery-overlay">
+            <span data-i18n="gallery.labels.adv2">Expedición Nocturna</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+      <div class="lightbox-counter" id="lightbox-counter"></div>
+      <div class="lightbox-controls">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+
+    <!-- ===================== DESTINATIONS ===================== -->
+    <section id="destinations" class="section-light">
+      <div class="container-center">
+        <h2 class="section-title reveal" data-i18n="dest.title">Nuestros Destinos</h2>
+        <p class="section-subtitle reveal" data-i18n="dest.subtitle">Descubre los lugares más impresionantes de la
+          Amazonía peruana — desde la selva profunda de Pacaya Samiria hasta los íconos de Iquitos.</p>
+      </div>
+
+      <div class="destinations-map-grid">
+        <!-- Reserva Nacional Pacaya Samiria -->
+        <div class="dest-card dest-featured reveal">
+          <div class="dest-icon">🌿</div>
+          <h3 data-i18n="dest.pacaya.title">Reserva Nacional Pacaya Samiria</h3>
+          <p data-i18n="dest.pacaya.desc">La reserva natural más grande del Perú con 2 millones de hectáreas. Hogar de
+            delfines rosados, caimanes, guacamayos y una biodiversidad extraordinaria. Navega por sus ríos y vive la
+            selva virgen.</p>
+          <span class="dest-tag" data-i18n="dest.tags.nature">🏞️ Naturaleza</span>
+        </div>
+
+        <!-- Isla de los Monos -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🐒</div>
+          <h3 data-i18n="dest.monos.title">Isla de los Monos</h3>
+          <p data-i18n="dest.monos.desc">Centro de rescate y hábitat natural de primates amazónicos. Interactúa con
+            monos ardilla, frailes y aulladores en su entorno natural a orillas del río Nanay.</p>
+          <span class="dest-tag" data-i18n="dest.tags.wildlife">🦜 Fauna</span>
+        </div>
+
+        <!-- Serpentario -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🐍</div>
+          <h3 data-i18n="dest.serpentario.title">Serpentario</h3>
+          <p data-i18n="dest.serpentario.desc">Exhibición educativa de reptiles amazónicos. Conoce boas, anacondas,
+            serpientes venenosas y caimanes con guías especializados que explican su rol en el ecosistema.</p>
+          <span class="dest-tag" data-i18n="dest.tags.education">📚 Educativo</span>
+        </div>
+
+        <!-- Cruce Río Nanay y Marañón -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🚤</div>
+          <h3 data-i18n="dest.cruce.title">Cruce Río Nanay y Marañón</h3>
+          <p data-i18n="dest.cruce.desc">Punto de encuentro de dos grandes ríos amazónicos donde las aguas de diferente
+            color se fusionan. Un espectáculo natural único e impresionante visto desde la lancha.</p>
+          <span class="dest-tag" data-i18n="dest.tags.scenic">📸 Escénico</span>
+        </div>
+
+        <!-- Reserva Allpahuayo Mishana -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🌳</div>
+          <h3 data-i18n="dest.allpahuayo.title">Reserva Allpahuayo Mishana</h3>
+          <p data-i18n="dest.allpahuayo.desc">Bosque de arena blanca con la mayor concentración de aves endémicas del
+            Perú. Hogar de especies únicas que no se encuentran en ningún otro lugar del mundo.</p>
+          <span class="dest-tag" data-i18n="dest.tags.nature">🏞️ Naturaleza</span>
+        </div>
+
+        <!-- San Joaquín de Omaguas -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🏘️</div>
+          <h3 data-i18n="dest.omaguas.title">San Joaquín de Omaguas</h3>
+          <p data-i18n="dest.omaguas.desc">Comunidad ribereña ancestral con rica historia colonial y cultura viva.
+            Conoce las tradiciones locales, artesanías y la gastronomía típica de la selva baja.</p>
+          <span class="dest-tag" data-i18n="dest.tags.culture">🎭 Cultura</span>
+        </div>
+
+        <!-- El Sapi Sapi Nauta -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🌊</div>
+          <h3 data-i18n="dest.sapisapi.title">El Sapi Sapi — Nauta</h3>
+          <p data-i18n="dest.sapisapi.desc">Balneario natural y punto de partida hacia Pacaya Samiria desde la ciudad de
+            Nauta. Disfruta del río, la comida regional y el ambiente ribereño auténtico.</p>
+          <span class="dest-tag" data-i18n="dest.tags.scenic">📸 Escénico</span>
+        </div>
+
+        <!-- CREA -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🦎</div>
+          <h3 data-i18n="dest.crea.title">CREA — Centro de Rescate Amazónico</h3>
+          <p data-i18n="dest.crea.desc">Centro de rehabilitación de fauna silvestre rescatada del tráfico ilegal.
+            Manatíes, nutrias gigantes, tortugas y aves son cuidados para ser reintroducidos a su hábitat natural.</p>
+          <span class="dest-tag" data-i18n="dest.tags.wildlife">🦜 Fauna</span>
+        </div>
+
+        <!-- Bosque de Huayo -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🌲</div>
+          <h3 data-i18n="dest.huayo.title">Bosque de Huayo</h3>
+          <p data-i18n="dest.huayo.desc">Bosque primario con senderos interpretativos y árboles centenarios. Ideal para
+            caminatas de observación de flora medicinal, aves exóticas y fotografía de naturaleza.</p>
+          <span class="dest-tag" data-i18n="dest.tags.nature">🏞️ Naturaleza</span>
+        </div>
+
+        <!-- Casa de Fierro -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🏛️</div>
+          <h3 data-i18n="dest.casafierro.title">Casa de Fierro — Iquitos</h3>
+          <p data-i18n="dest.casafierro.desc">Icónica construcción de hierro diseñada por Gustave Eiffel durante la
+            época del caucho. Monumento histórico en el corazón de la Plaza de Armas de Iquitos.</p>
+          <span class="dest-tag" data-i18n="dest.tags.historic">🏛️ Histórico</span>
+        </div>
+
+        <!-- Boulevard de Iquitos -->
+        <div class="dest-card reveal">
+          <div class="dest-icon">🌅</div>
+          <h3 data-i18n="dest.boulevard.title">Boulevard — Iquitos</h3>
+          <p data-i18n="dest.boulevard.desc">Malecón Tarapacá con vista panorámica al río Itaya y el barrio flotante de
+            Belén. Restaurantes, bares y vida nocturna con las mejores puestas de sol de la ciudad.</p>
+          <span class="dest-tag" data-i18n="dest.tags.urban">🌆 Urbano</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section id="pricing" class="section-dark">
+      <div class="container-center">
+        <h2 class="section-title text-light reveal" data-i18n="pricing.title">Paquetes de Expedición</h2>
+        <p class="section-subtitle text-light reveal" style="opacity: 0.8;" data-i18n="pricing.subtitle">Elige la
+          aventura perfecta para ti. Todos los precios incluyen guía, transporte y equipo.</p>
+      </div>
+
+      <div class="prices-grid">
+        <!-- Basic -->
+        <div class="price-card reveal">
+          <div class="price-image"
+            style="background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80')">
+            <div class="price-overlay">
+              <h3 data-i18n="pricing.basic.name">Expedición Express</h3>
+            </div>
+          </div>
+          <div class="price-body">
+            <div class="price-value">
+              <span class="currency">S/</span><span class="amount">250</span>
+            </div>
+            <div class="price-usd" data-i18n="pricing.basic.usd">≈ $65 USD</div>
+            <p class="per-person" data-i18n="pricing.perPerson">por persona / 1 día</p>
+            <hr class="divider">
+            <ul class="price-features">
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.basic.f1">Caminata guiada (4 hrs)</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.basic.f2">Transporte fluvial ida y vuelta</span>
+              </li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.basic.f3">Almuerzo típico incluido</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.basic.f4">Avistamiento de fauna</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.basic.f5">Equipo básico proporcionado</span></li>
+            </ul>
+            <button class="btn-outline" data-i18n="pricing.basic.btn">Consultar</button>
+          </div>
+        </div>
+
+        <!-- Popular -->
+        <div class="price-card popular reveal">
+          <span class="popular-badge" data-i18n="pricing.popular.badge">⭐ Más Popular</span>
+          <div class="price-image"
+            style="background-image: url('/images/Landescape/dji_fly_20230307_083412_593_1678196401112_photo_optimized.JPG')">
+            <div class="price-overlay">
+              <h3 data-i18n="pricing.popular.name">Aventura Completa</h3>
+            </div>
+          </div>
+          <div class="price-body">
+            <div class="price-value">
+              <span class="currency">S/</span><span class="amount">650</span>
+            </div>
+            <div class="price-usd" data-i18n="pricing.popular.usd">≈ $170 USD</div>
+            <p class="per-person" data-i18n="pricing.perPerson3">por persona / 3 días</p>
+            <hr class="divider">
+            <ul class="price-features">
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.popular.f1">Todo lo del plan Express</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.popular.f2">Camping 2 noches en la selva</span>
+              </li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.popular.f3">Pesca deportiva artesanal</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.popular.f4">Avistamiento de delfines
+                  rosados</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.popular.f5">Todas las comidas incluidas</span>
+              </li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.popular.f6">Sesión fotográfica con drone</span>
+              </li>
+            </ul>
+            <button class="btn-fill" data-i18n="pricing.popular.btn">Reservar Ahora</button>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="price-card reveal">
+          <div class="price-image"
+            style="background-image: url('https://images.unsplash.com/photo-1614092523277-2e557297e289?auto=format&fit=crop&w=800&q=80')">
+            <div class="price-overlay">
+              <h3 data-i18n="pricing.premium.name">Expedición Premium</h3>
+            </div>
+          </div>
+          <div class="price-body">
+            <div class="price-value">
+              <span class="currency">S/</span><span class="amount">1200</span>
+            </div>
+            <div class="price-usd" data-i18n="pricing.premium.usd">≈ $315 USD</div>
+            <p class="per-person" data-i18n="pricing.perPerson5">por persona / 5 días</p>
+            <hr class="divider">
+            <ul class="price-features">
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.premium.f1">Todo lo del plan Completo</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.premium.f2">Ceremonia de Ayahuasca</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.premium.f3">Caminata nocturna guiada</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.premium.f4">Visita a comunidades nativas</span>
+              </li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.premium.f5">Video profesional del viaje</span>
+              </li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.premium.f6">Transporte desde Iquitos
+                  incluido</span></li>
+              <li><i class="icon-check">✓</i> <span data-i18n="pricing.premium.f7">Guía privado exclusivo</span></li>
+            </ul>
+            <button class="btn-outline" data-i18n="pricing.premium.btn">Consultar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-dark">
+      <h2 class="section-title text-light reveal" data-i18n="services.title">Servicios Incluidos</h2>
+      <div class="services-container">
+        <div class="service-item reveal">
+          <i class="icon">🚤</i>
+          <h3 data-i18n="services.transport.title">Transporte Fluvial</h3>
+          <p data-i18n="services.transport.desc">Lanchas rápidas y seguras dentro de la reserva.</p>
+        </div>
+        <div class="service-item reveal">
+          <i class="icon">🏕️</i>
+          <h3 data-i18n="services.equipment.title">Equipo Completo</h3>
+          <p data-i18n="services.equipment.desc">Carpas, botas y todo lo necesario para la expedición.</p>
+        </div>
+        <div class="service-item reveal">
+          <i class="icon">👮</i>
+          <h3 data-i18n="services.guides.title">Guías Certificados</h3>
+          <p data-i18n="services.guides.desc">Expertos locales conocedores de cada rincón.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Guide -->
+    <section id="about" class="section-light">
+      <div class="about-container">
+        <div class="about-content reveal">
+          <span class="subtitle" data-i18n="about.subtitle">Guía Oficial de Turismo</span>
+          <h2 class="section-title" style="text-align: left;" data-i18n="about.title">Hola, Mi Nombre es Rey Abelardo
+            Mozombite Torres</h2>
+          <p class="about-text" data-i18n="about.text1">
+            "Bienvenidos a mi espacio en la selva. He dedicado más de <strong> 20 </strong> años a recorrer y proteger
+            la Reserva
+            Nacional Pacaya Samiria.
+            Como guía certificado, mi misión es mostrarte los secretos de la selva que solo los locales conocemos."
+          </p>
+          <p class="about-text" data-i18n="about.text2">
+            Te ofrezco una experiencia segura, auténtica y respetuosa con la naturaleza. No solo verás la selva, la
+            vivirás.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h3>+20</h3>
+              <p data-i18n="about.stat1">Años de Experiencia</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p data-i18n="about.stat2">Seguridad Garantizada</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal"
+          style="background-image: url('https://images.unsplash.com/photo-1544642899-f0d6e5f6ed6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section-dark">
+      <h2 class="section-title text-light reveal" data-i18n="testimonials.title">Lo que dicen nuestros viajeros</h2>
+      <div class="testimonials-grid">
+        <!-- Review 1: Rafaella S. -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-header">
+            <span class="tripadvisor-badge">TripAdvisor</span>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text" data-i18n="testimonials.t1.text">Al llegar al aeropuerto nos recogieron dos personas
+            del hotel. Nos dieron una bolsa con una mandarina y chifles. Al llegar al lodge nos recibieron con un jugo
+            de camu camu. Estuve en la habitación Mukuika; las camas tenían mosquitero. Hicimos caminatas, paseos en
+            bote y vimos cinco especies de monos y delfines rosados, pero lo más divertido fue pescar pirañas. Nuestro
+            guía se llamaba Rey. ¡Gracias, Rey! Consejo: llevar repelente, ir a las excursiones con leggings y llevar
+            cámara.</p>
+          <div class="reviewer">
+            <strong>Rafaella S.</strong>
+            <span class="country">🇵🇪 Lima, Perú</span>
+          </div>
+        </div>
+        <!-- Review 2: VivaLaAnna -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-header">
+            <span class="tripadvisor-badge">TripAdvisor</span>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text" data-i18n="testimonials.t2.text">Escribo esta opinión un poco tarde, pero quería
+            dedicar unas palabras a la increíble experiencia que vivimos en Pacaya Samiria. Elegimos este lodge por ser
+            sustentable, con acceso directo a la reserva y por su apoyo a la comunidad local. No pudimos estar más
+            felices con nuestra elección. Durante nuestra estancia de 4 días nos acompañó nuestro guía Rey: un ser
+            humano increíble, con una gran sonrisa y un conocimiento vasto de las plantas y animales. El albergue es un
+            paraíso donde vimos el nacimiento de tortugas, caimanes y perezosos. Aunque no hay agua caliente, es
+            comprensible por estar en la selva y no se echa de menos. ¡El personal fue muy servicial y la comida
+            increíble! Tuvimos tiempo para descansar y disfrutar, que era justo lo que necesitábamos tras dos semanas de
+            tour por Perú. 10/10, ¡esperamos volver pronto!</p>
+          <div class="reviewer">
+            <strong>VivaLaAnna</strong>
+            <span class="country">🇮🇹 Treviso, Italia</span>
+          </div>
+        </div>
+        <!-- Review 3: Maria Paz O. -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-header">
+            <span class="tripadvisor-badge">TripAdvisor</span>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text" data-i18n="testimonials.t3.text">¡Acabamos de regresar de unos días increíbles en
+            nuestra expedición por la Amazonía! Estamos emocionados por la experiencia. El lodge es hermoso, está súper
+            bien
+            cuidado y las habitaciones son impecables. Solo hay electricidad por 4 horas al día, pero es suficiente ya
+            que pasas el día en excursiones. No hay wifi, lo cual permite una inmersión total en la selva. ¡El personal
+            es espectacular! Sobre la comida: ¡INCREÍBLE! Todo delicioso y preparado con esmero. Nuestro guía, Rey, nos
+            hizo pasar una experiencia espectacular desde que nos recogió en Iquitos. Es muy profesional, sabe muchísimo
+            de la selva, animales y plantas. Quedamos fascinados con Rey y lo extrañaremos mucho. ¡Esperamos regresar
+            pronto para acampar en la reserva! ¡Gracias Rey por todo!</p>
+          <div class="reviewer">
+            <strong>Maria Paz O.</strong>
+            <span class="country">🇵🇪 Perú</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact/Footer -->
+    <footer id="contact">
+      <div class="footer-content">
+        <h2 data-i18n="footer.title">Empieza tu Viaje</h2>
+        <form action="https://formsubmit.co/931055088rey@gmail.com" method="POST" class="booking-form">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="Nueva consulta: The King Travels">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://thekingtravels.netlify.app/">
+          <!-- Optional: fallback redirect -->
+
+          <input type="text" name="name" placeholder="Nombre completo" data-i18n-placeholder="footer.name" required>
+          <input type="email" name="email" placeholder="Correo electrónico" data-i18n-placeholder="footer.email"
+            required>
+          <textarea name="message" placeholder="¿En qué podemos ayudarte?" rows="3" required></textarea>
+          <button type="submit" class="btn-primary" data-i18n="footer.btn">Consultar Disponibilidad</button>
+        </form>
+        <div class="footer-contacts">
+          <!-- WhatsApp and Email text removed for minimal design, relocated email below -->
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/reyabelardo.mozombitetorrer" target="_blank" class="social-icon"
+            aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22 12c0-5.52-4.48-10-10-10s-10 4.48-10 10c0 4.84 3.44 8.87 8 9.8v-6.92h-2.52v-2.88h2.52v-2.2c0-2.48 1.48-3.85 3.73-3.85 1.08 0 2.21.19 2.21.19v2.43h-1.24c-1.23 0-1.62.76-1.62 1.54v1.88h2.74l-.44 2.88h-2.3v6.92c4.56-.93 8-4.96 8-9.8z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/thekingadventures17?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank" class="social-icon" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.558.217.957.477 1.377.896.419.42.679.819.896 1.377.163.422.358 1.057.412 2.227.059 1.266.071 1.646.071 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.412 2.227-.217.558-.477.957-.896 1.377-.42.419-.819.679-1.377.896-.422.163-1.057.358-2.227.412-1.266.059-1.646.071-4.85.071s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.558-.217-.957-.477-1.377-.896-.419-.42-.679-.819-.896-1.377-.163-.422-.358-1.057-.412-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.217-.558.477-.957.896-1.377.42-.419.819-.679 1.377-.896.422-.163 1.057-.358 2.227-.412 1.266-.059 1.646-.071 4.85-.071zm0-2c-3.259 0-3.667.014-4.947.072-1.277.057-2.148.26-2.911.557-.79.306-1.459.717-2.126 1.384-.667.667-1.078 1.336-1.383 2.126-.297.763-.5 1.634-.558 2.911-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.057 1.277.26 2.148.558 2.911.306.79.717 1.459 1.384 2.126.667.667 1.336 1.079 2.126 1.383.763.297 1.634.501 2.911.558 1.28.057 1.688.072 4.947.072s3.667-.014 4.947-.072c1.277-.057 2.148-.26 2.911-.557.79-.306 1.459-.717 2.126-1.384.667-.667 1.078-1.336 1.383-2.126.297-.763.5-1.634.558-2.911.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.057-1.277-.26-2.148-.558-2.911-.306-.79-.717-1.459-1.384-2.126-.667-.667-1.336-1.078-2.126-1.383-.763-.297-1.634-.5-2.911-.558-1.28-.057-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://wa.me/51931055088" target="_blank" class="social-icon" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 The King Travels. <span data-i18n="footer.rights">Todos los derechos
+            reservados.</span> | <a href="mailto:931055088rey@gmail.com" class="footer-email">931055088rey@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/51931055088" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
+    <div class="whatsapp-tooltip">¡Hola! Chatea con nosotros 🌿</div>
+    <span class="wa-icon">💬</span>
+  </a>
+
+  <!-- Review Modal -->
+  <div id="review-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modal-review-body">
+        <!-- Content injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
